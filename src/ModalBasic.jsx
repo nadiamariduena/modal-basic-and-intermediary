@@ -6,13 +6,13 @@ const ModalBasic = () => {
   console.log(openModal);
   return (
     <>
-      <div>
+      <div className="modal">
         <button
           className="btn-card"
           type="button"
           onClick={() => setOpenModal(true)}
         >
-          button
+          open
         </button>
         {openModal && <ModalContent />}
       </div>
