@@ -1,3 +1,4 @@
+import ModalBasic from "./ModalBasic";
 import "./scss/main.scss";
 
 function App() {
@@ -5,7 +6,9 @@ function App() {
     <>
       {" "}
       <main className="page">
-        <div className="app"></div>
+        <div className="app">
+          <ModalBasic />
+        </div>
       </main>
     </>
   );
