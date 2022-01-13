@@ -7,7 +7,19 @@ const ModalBasic = () => {
 
   return (
     <>
-      <div className="modal">
+      <section className="modal">
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+          reprehenderit quae aut necessitatibus mollitia asperiores doloribus
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+          reprehenderit quae aut necessitatibus mollitia asperiores doloribus
+          nesciunt laborum consequuntur magni? Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Ipsam reprehenderit quae aut
+          necessitatibus mollitia asperiores doloribus nesciunt laborum
+          consequuntur magni?
+        </p>
         <button
           className="btn-card"
           type="button"
@@ -18,7 +30,7 @@ const ModalBasic = () => {
           open
         </button>{" "}
         {openModal && <ModalContent closeModal={setOpenModal} />}
-      </div>
+      </section>
     </>
   );
 };
