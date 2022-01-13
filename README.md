@@ -84,5 +84,47 @@ export default Example1;
 #### Create another component below the component Example1
 
 ```javascript
+//
+// ------- Component related to the image
 
+const ProfessionImg = ({ src }) => {
+  return <img src={src} alt="" style={{ width: "200px", height: "250px" }} />;
+};
+
+//
+//
+
+export default Example1;
 ```
+
+#### after that render the img like so
+
+```javascript
+        {/* ------ */}
+
+        <div className="rendering-profession">
+          {/*4  once you will click on the button above, this below will render */}
+          <p>{myProfession}</p>
+
+          <p>
+            {myProfession === "police" && <ProfessionImg src={img1} />}
+            {/* {myProfession === "chef" && <ProfessionImg src={img2} />}
+            {myProfession === "doctor" && <ProfessionImg src={img3} />} */}
+          </p>
+        </div>
+      </section>
+    </>
+  );
+};
+
+//
+// ------- Component related to the image
+```
+
+##### i notice there was an error, the reason is because we are telling that the img name has to match the condition here
+
+```javascript
+ {myProfession === "police
+```
+
+#### if the imagine isnt 'police.jpg', it will show an error
