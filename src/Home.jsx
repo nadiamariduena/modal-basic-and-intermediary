@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ModalContent from "./ModalContent";
 
-const ModalBasic = () => {
+const Home = () => {
   const [openModal, setOpenModal] = useState(false);
   console.log(openModal);
 
@@ -35,4 +35,4 @@ const ModalBasic = () => {
   );
 };
 
-export default ModalBasic;
+export default Home;
