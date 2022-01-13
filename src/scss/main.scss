@@ -65,10 +65,11 @@ body::-webkit-scrollbar-thumb {
         font-family: "RobotoBlack";
       }
       p {
+        width: 50%;
         margin-top: 1rem;
         font-size: calc(15px + 1vmin);
-        width: 50%;
-        font-family: "PoppinsThin";
+        font-weight: 100;
+        font-family: "Lato-Light";
         line-height: 28px;
       }
       //
@@ -84,7 +85,7 @@ body::-webkit-scrollbar-thumb {
         text-transform: lowercase;
         font-style: italic;
         letter-spacing: 2px;
-        color: rgb(240, 240, 240);
+        color: rgb(17, 17, 17);
         background-color: transparent;
       }
     }
@@ -125,6 +126,22 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     min-height: auto;
     object-fit: cover;
+  }
+
+  //
+  //
+  .btn-card {
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 12px 24px;
+    border: 0;
+    font-weight: 100;
+    font-size: calc(15px + 1vmin);
+    text-transform: lowercase;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: rgb(240, 240, 240);
+    background-color: transparent;
   }
 
   //

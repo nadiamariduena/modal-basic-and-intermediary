@@ -29,8 +29,8 @@ const ModalBasic = () => {
         >
           open
         </button>{" "}
-        {openModal && <ModalContent closeModal={setOpenModal} />}
-      </section>
+      </section>{" "}
+      {openModal && <ModalContent closeModal={setOpenModal} />}
     </>
   );
 };
