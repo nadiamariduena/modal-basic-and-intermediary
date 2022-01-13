@@ -4,17 +4,20 @@ import ModalContent from "./ModalContent";
 const ModalBasic = () => {
   const [openModal, setOpenModal] = useState(false);
   console.log(openModal);
+
   return (
     <>
       <div className="modal">
         <button
           className="btn-card"
           type="button"
-          onClick={() => setOpenModal(true)}
+          onClick={() => {
+            setOpenModal(true);
+          }}
         >
           open
-        </button>
-        {openModal && <ModalContent />}
+        </button>{" "}
+        {openModal && <ModalContent closeModal={setOpenModal} />}
       </div>
     </>
   );
