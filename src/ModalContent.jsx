@@ -2,27 +2,27 @@ import React, { useState } from "react";
 
 function ModalContent({ closeModal }) {
   const [changeImg, setChangeImg] = useState(
-    "https://images.pexels.com/photos/8422782/pexels-photo-8422782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    "https://images.pexels.com/photos/10679232/pexels-photo-10679232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   );
 
   const Changing = () => {
     if (
       changeImg ===
-      "https://images.pexels.com/photos/8422782/pexels-photo-8422782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      "https://images.pexels.com/photos/10679232/pexels-photo-10679232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     ) {
       setChangeImg(
-        "https://images.pexels.com/photos/8422781/pexels-photo-8422781.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "https://images.pexels.com/photos/10679206/pexels-photo-10679206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       );
     } else if (
       changeImg ===
-      "https://images.pexels.com/photos/8422781/pexels-photo-8422781.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      "https://images.pexels.com/photos/10679206/pexels-photo-10679206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     ) {
       setChangeImg(
-        "https://images.pexels.com/photos/8422782/pexels-photo-8422782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "https://images.pexels.com/photos/10679204/pexels-photo-10679204.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       );
     } else {
       setChangeImg(
-        "https://images.pexels.com/photos/8422782/pexels-photo-8422782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        "https://images.pexels.com/photos/10679232/pexels-photo-10679232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
       );
     }
   };
