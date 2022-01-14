@@ -1,4 +1,5 @@
 import React from "react";
+import { dataSlider } from "../dataSlider";
 
 //
 //
@@ -10,7 +11,12 @@ const TestimonialFront = () => {
 
         {/*  */}
 
-        <div></div>
+        <div>
+          {dataSlider.map((item, index) => {
+            const { image } = item;
+            return <img src={item.image} alt="" />;
+          })}
+        </div>
 
         {/*  */}
       </section>

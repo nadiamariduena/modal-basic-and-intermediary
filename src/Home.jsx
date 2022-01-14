@@ -6,7 +6,7 @@ import TestimonialFront from "./components/TestimonialFront";
 const Home = () => {
   return (
     <>
-      <Modal />
+      {/* <Modal /> */}
       <TestimonialFront />
     </>
   );
