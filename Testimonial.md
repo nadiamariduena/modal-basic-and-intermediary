@@ -385,7 +385,7 @@ if (!Array.isArray(slides) || slides.length <= 0) {
 
 <br>
 
-### If you are familiar with arrays you know they start at 0, so if we have 4 images we deduce 1, so in total we will have 3 and then it will reset it and go back to '0 :' :else
+#### If you are familiar with arrays you know they start at 0, so if we have 4 images we deduce 1, so in total we will have 3 and then it will reset it and go back to '0 :' :else
 
 ```javascript
 const nextSlide = () => {
@@ -417,3 +417,5 @@ const prevSlide = () => {
   setCurrent(current === 0 ? length - 1 : current - 1);
 };
 ```
+
+[<img src="./src/img/slider-current-logic3_prev_btn.gif"/>]()
