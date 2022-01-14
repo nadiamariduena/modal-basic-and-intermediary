@@ -429,7 +429,7 @@ const prevSlide = () => {
 
 ### Showing the images
 
-- Nest the map function inside a new div, add a condition to see if the user is sliding
+- Nest the map function inside a new div, add a condition inside the **className** to see if the user is sliding
 
 ```javascript
 <div className={index === current ? "slide active" : "slide"} key={index}>
@@ -441,4 +441,35 @@ const prevSlide = () => {
 
 ```javascript
 
+```
+
+[<img src="./src/img/slider-working1.gif"/>]()
+
+#### You can also add text
+
+```javascript
+{
+  index === current && (
+    <>
+      {" "}
+      <img src={item.image} alt="img" className="img-box" />
+      <div className="text-box">
+        <h2>{item.desc}</h2> //add another property inside the dataSlider.js
+      </div>
+    </>
+  );
+
+  /*
+  export const dataSlider = [
+  {
+    id: 0,
+    desc: "1 img at pos 0",
+    image:
+      "https://images.pexels.com/photos/10679196/pexels-photo-10679196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+  },
+  
+  
+  
+  */
+}
 ```

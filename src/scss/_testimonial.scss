@@ -4,15 +4,21 @@
   min-height: 100vh;
   padding: 0 0 3vh 0;
   background-color: rgb(240, 219, 195);
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   //
+
   font-family: "RobotoBlack";
   font-size: calc(20px + 1vmin);
 
   //
 
   .slider {
+    margin-top: 40px;
     position: relative;
+    width: 75%;
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -51,12 +57,23 @@
     //
     .text-box {
       width: 50%;
-      height: 50%;
-      background-color: pink;
+      height: 100%;
+
       z-index: 10;
       position: absolute;
-      top: 25%;
+      top: 1%;
       left: 25%;
+
+      //
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        color: rgba(255, 253, 245, 0.616);
+        font-family: "CoffekanRegular";
+        font-family: "PoppinsThin";
+        font-size: 3rem;
+      }
     }
   }
 

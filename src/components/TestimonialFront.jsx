@@ -33,7 +33,7 @@ const TestimonialFront = ({ slides }) => {
   //
   return (
     <section className="testimonial-front">
-      <h1>Testimonial</h1>
+      {/* <h1>Testimonial</h1> */}
       {/*  */}
       <div className="slider">
         <CgArrowLongLeft className="left-arrow" onClick={prevSlide} />
@@ -47,14 +47,15 @@ const TestimonialFront = ({ slides }) => {
                 key={index}
               >
                 {index === current && (
-                  <img src={item.image} alt="img" className="img-box" />
+                  <>
+                    {" "}
+                    <img src={item.image} alt="img" className="img-box" />
+                    <div className="text-box">
+                      <h2>{item.desc}</h2>
+                    </div>
+                  </>
                 )}
               </div>
-
-              {/* <div className="text-box">
-                {" "}
-                <h2>{item.desc}</h2>
-              </div> */}
             </>
           );
         })}

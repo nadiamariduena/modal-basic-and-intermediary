@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
       <main className="page">
         <div
           className="app"
