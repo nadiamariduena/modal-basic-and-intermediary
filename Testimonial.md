@@ -419,3 +419,26 @@ const prevSlide = () => {
 ```
 
 [<img src="./src/img/slider-current-logic3_prev_btn.gif"/>]()
+
+<br>
+<br>
+
+---
+
+<br>
+
+### Showing the images
+
+- Nest the map function inside a new div, add a condition to see if the user is sliding
+
+```javascript
+<div className={index === current ? "slide active" : "slide"} key={index}>
+  <img src={item.image} alt="img" className="img-box" />
+</div>
+```
+
+<br>
+
+```javascript
+
+```

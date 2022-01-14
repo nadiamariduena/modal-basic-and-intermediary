@@ -42,12 +42,19 @@ const TestimonialFront = ({ slides }) => {
         {dataSlider.map((item, index) => {
           return (
             <>
-              <img src={item.image} alt="img" className="img-box" />
+              <div
+                className={index === current ? "slide active" : "slide"}
+                key={index}
+              >
+                {index === current && (
+                  <img src={item.image} alt="img" className="img-box" />
+                )}
+              </div>
 
-              <div className="text-box">
+              {/* <div className="text-box">
                 {" "}
                 <h2>{item.desc}</h2>
-              </div>
+              </div> */}
             </>
           );
         })}
