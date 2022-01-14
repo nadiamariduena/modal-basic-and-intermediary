@@ -381,7 +381,11 @@ if (!Array.isArray(slides) || slides.length <= 0) {
 <br>
 <br>
 
-### If you are familiar with arrays you know they start at 0, so if we have 4 images we deduce 1, so in total we will have 3 and then it will reset it and go back to 0
+### nextSlide 🍊
+
+<br>
+
+### If you are familiar with arrays you know they start at 0, so if we have 4 images we deduce 1, so in total we will have 3 and then it will reset it and go back to '0 :' :else
 
 ```javascript
 const nextSlide = () => {
@@ -394,8 +398,22 @@ console.log(current);
 
 ##### When i have 4 img
 
+- As you can see, the first time i click, it start with 1, then once i reach the end of the length, it goes back to 0
+
 [<img src="./src/img/slider-current-logic.gif"/>]()
 
 ##### When i have 3 img
 
 [<img src="./src/img/slider-current-logic2.gif"/>]()
+
+<br>
+
+### prevSlide 🍊
+
+> If **current** is equal to 0 (**so essentially, its back on the main of our images**), then I want to set the **length to be - 1** , else:, I am going the set the current to **subtract 1**
+
+```javascript
+const prevSlide = () => {
+  setCurrent(current === 0 ? length - 1 : current - 1);
+};
+```

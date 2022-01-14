@@ -18,6 +18,11 @@ const TestimonialFront = ({ slides }) => {
   console.log(current);
   //
   //
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+  //
+  //
   //if our slides, dont have an array and if our array is not an array type
   //  OR || the slides, which is the images, has less or equal than 0,
   // then return null
@@ -31,7 +36,7 @@ const TestimonialFront = ({ slides }) => {
       <h1>Testimonial</h1>
       {/*  */}
       <div className="slider">
-        <CgArrowLongLeft className="left-arrow" />
+        <CgArrowLongLeft className="left-arrow" onClick={prevSlide} />
         <CgArrowLongRight className="right-arrow" onClick={nextSlide} />
 
         {dataSlider.map((item, index) => {
@@ -39,10 +44,10 @@ const TestimonialFront = ({ slides }) => {
             <>
               <img src={item.image} alt="img" className="img-box" />
 
-              {/* <div className="text-box">
+              <div className="text-box">
                 {" "}
                 <h2>{item.desc}</h2>
-              </div> */}
+              </div>
             </>
           );
         })}
