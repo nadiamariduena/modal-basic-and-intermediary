@@ -478,7 +478,7 @@ const prevSlide = () => {
 
 ### ⚠️ Some Issues
 
-#### IN the beginning I said that adding display flex + centering will break it, yes it will but at the end of the project you can actually add it
+#### IN the beginning I said, that adding display flex + centering will break the slider, yes it did with the set up of the start of the project, but at the end of the project you can actually add it.
 
 ```scss
 .testimonial-front {
@@ -497,3 +497,11 @@ const prevSlide = () => {
 
   //
 ```
+
+### ⚠️ clashing of z-index
+
+#### The easier way would have been to add the slider in another page, but I wanted to see the issues I could encounter
+
+<br>
+
+- With the z-index to 1 to each arrow, you will see a clash between the modal and the slider arrows, when i said a clash
