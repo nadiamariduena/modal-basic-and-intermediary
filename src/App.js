@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import Navbar from "./components/Navbar";
 
-// const videoBg =
-//   "https://images.pexels.com/photos/10679086/pexels-photo-10679086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
+const videoBg =
+  "https://images.pexels.com/photos/10679162/pexels-photo-10679162.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260";
 
 function App() {
   return (
@@ -14,10 +14,13 @@ function App() {
       <main className="page">
         <div
           className="app"
-          // style={{
-          //   backgroundImage: `url(${videoBg})`,
-          //   objectFit: "cover",
-          // }}
+          style={{
+            backgroundRepeat: "no-repeat",
+            backgroundImage: `url(${videoBg})`,
+            backgroundAttachment: "fixed",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
         >
           <Switch>
             {" "}
