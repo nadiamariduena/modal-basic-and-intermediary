@@ -31,7 +31,7 @@ const Home = () => {
           open
         </button>{" "}
       </section>{" "}
-      {openModal && <ModalContent closeModal={setOpenModal} />}
+      {openModal && <ModalContent closingModal={setOpenModal} />}
     </>
   );
 };

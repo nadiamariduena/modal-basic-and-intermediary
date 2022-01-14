@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function ModalContent({ closeModal }) {
+function ModalContent({ closingModal }) {
   const [changeImg, setChangeImg] = useState(
     "https://images.pexels.com/photos/10679232/pexels-photo-10679232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   );
@@ -40,7 +40,7 @@ function ModalContent({ closeModal }) {
         <button
           className="btn-close-modal"
           type="button"
-          onClick={() => closeModal(false)}
+          onClick={() => closingModal(false)}
         >
           X
         </button>

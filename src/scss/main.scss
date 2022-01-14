@@ -1,5 +1,6 @@
 @import "_fonts";
-@import "_testimonial";
+@import "_testimonoal";
+
 //
 //
 ::before,
@@ -32,38 +33,6 @@ body::-webkit-scrollbar-thumb {
 /* --------------- */
 /* --------------- */
 
-header {
-  width: 100vw;
-  min-height: 3vh;
-  padding: 1vh 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: fixed;
-  h3 {
-    margin: 0 0 0 30px;
-
-    font-family: "Syncopate-Regular";
-    letter-spacing: 5px;
-    font-size: calc(20px + 1vmin);
-  }
-  nav {
-    display: flex;
-    flex-direction: row;
-    ul {
-      margin: 0 20px 0 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      li {
-        display: inline-block;
-        margin: 0 10px;
-        font-family: "Poppins-Light";
-        font-weight: 600;
-      }
-    }
-  }
-}
 /* --------------- */
 /* --------------- */
 
@@ -74,6 +43,43 @@ header {
   //
   //
 
+  /* --------------- */
+  /* --------------- */
+
+  header {
+    width: 100vw;
+    min-height: 3vh;
+    padding: 1vh 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    h3 {
+      margin: 0 0 0 30px;
+
+      font-family: "Syncopate-Regular";
+      letter-spacing: 5px;
+      font-size: calc(20px + 1vmin);
+    }
+    nav {
+      display: flex;
+      flex-direction: row;
+      ul {
+        margin: 0 20px 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+          display: inline-block;
+          margin: 0 10px;
+          font-family: "Poppins-Light";
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  /* --------------- */
+  /* --------------- */
   //
   //
   .app {
@@ -88,14 +94,13 @@ header {
     .modal {
       width: 100%;
       height: 100%;
+      // overlay in the frontpage
       background-color: rgba(252, 252, 252, 0.349);
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      position: absolute;
-      top: 0;
-      left: 0;
+
       //
       //
       h1 {
@@ -119,7 +124,6 @@ header {
       //
       //
       .btn-card {
-        cursor: pointer;
         margin-top: 30px;
         padding: 12px 24px;
         border: 0;
@@ -139,6 +143,8 @@ header {
   //
 
   .modal-content {
+    // model open
+
     background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
@@ -150,6 +156,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
+
     //
 
     // box-shadow: 0.5rem 0.5rem rgb(255, 0, 0);
@@ -176,7 +183,6 @@ header {
     //
     //
     .btn-card {
-      cursor: pointer;
       margin-top: 30px;
       padding: 12px 24px;
       border: 0;
@@ -195,7 +201,7 @@ header {
     .btn-close-modal {
       font-size: 2.5rem;
       cursor: pointer;
-
+      //    pointer-events: none; //only add this when you have an issue with overlay
       border: 0;
       font-weight: 100;
 
@@ -239,13 +245,3 @@ header {
 }
 //@at-root//@at-root
 //
-
-.example2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  background-color: pink;
-}
