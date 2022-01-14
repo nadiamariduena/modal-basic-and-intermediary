@@ -136,3 +136,18 @@ const TestimonialFront = (slides) => { ✋
   const [current, setCurrent] = useState(0);
   const length = slides.length; ✋
 ```
+
+<br>
+<br>
+
+### Add the Arrow icons
+
+- You can either install this [react-icons](https://react-icons.github.io/react-icons/)
+
+##### [arrows](https://react-icons.github.io/react-icons/)
+
+```javascript
+npm install react-icons
+```
+
+- Or just use some html symbols
