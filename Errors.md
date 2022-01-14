@@ -34,3 +34,34 @@
 > #### When handling overlays and modals, this property can be heaven or hell ✋
 
 - So without noticing, I have added it to the modal-content, and because of this the button didnt work
+
+<br>
+<br>
+
+---
+
+<br>
+
+### Minor issues ⚠️
+
+<br>
+<br>
+
+> ##### If you have a blank page, and you know there is not problems on the code (Apparently)
+
+- Check the mispelling
+
+> I had the code below, and the name of the file was: testimonial.scss
+
+```scss
+@import "_testimoniial";
+```
+
+#### That cause the page not to work!!
+
+<br>
+<br>
+
+---
+
+<br>

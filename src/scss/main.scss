@@ -1,5 +1,5 @@
 @import "_fonts";
-@import "_testimonoal";
+@import "_testimonial";
 
 //
 //
@@ -40,46 +40,6 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-wrap: wrap;
 
-  //
-  //
-
-  /* --------------- */
-  /* --------------- */
-
-  header {
-    width: 100vw;
-    min-height: 3vh;
-    padding: 1vh 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: fixed;
-    h3 {
-      margin: 0 0 0 30px;
-
-      font-family: "Syncopate-Regular";
-      letter-spacing: 5px;
-      font-size: calc(20px + 1vmin);
-    }
-    nav {
-      display: flex;
-      flex-direction: row;
-      ul {
-        margin: 0 20px 0 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        li {
-          display: inline-block;
-          margin: 0 10px;
-          font-family: "Poppins-Light";
-          font-weight: 600;
-        }
-      }
-    }
-  }
-  /* --------------- */
-  /* --------------- */
   //
   //
   .app {
@@ -200,7 +160,7 @@ body::-webkit-scrollbar-thumb {
     //
     .btn-close-modal {
       font-size: 2.5rem;
-      cursor: pointer;
+      // cursor: pointer;
       //    pointer-events: none; //only add this when you have an issue with overlay
       border: 0;
       font-weight: 100;
