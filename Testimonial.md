@@ -473,3 +473,27 @@ const prevSlide = () => {
   */
 }
 ```
+
+<br>
+
+### ⚠️ Some Issues
+
+#### IN the beginning I said that adding display flex + centering will break it, yes it will but at the end of the project you can actually add it
+
+```scss
+.testimonial-front {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0 0 3vh 0;
+  background-color: rgb(14, 14, 14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  //
+
+  font-family: "RobotoBlack";
+  font-size: calc(20px + 1vmin);
+
+  //
+```

@@ -9,7 +9,7 @@ import { dataSlider } from "./dataSlider";
 const Home = () => {
   return (
     <>
-      {/* <Modal /> */}
+      <Modal />
       <TestimonialFront slides={dataSlider} />
     </>
   );
