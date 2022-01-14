@@ -5,7 +5,9 @@ import React from "react";
 const TestimonialFront = () => {
   return (
     <>
-      <div className="testimonial-front">hello</div>
+      <section className="testimonial-front">
+        <h1>Testimonial</h1>
+      </section>
     </>
   );
 };

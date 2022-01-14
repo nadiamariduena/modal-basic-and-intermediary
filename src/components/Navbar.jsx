@@ -14,7 +14,9 @@ const Navbar = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/testimonial">Example 2 </Link>{" "}
+              <Link to="/testimonial" className="link-li">
+                Example 2{" "}
+              </Link>{" "}
             </li>
             <li>Example 3</li>
           </ul>

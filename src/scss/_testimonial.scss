@@ -13,4 +13,11 @@
   width: 100vw;
   height: 100vh;
   background-color: rgb(240, 219, 195);
+
+  //
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "RobotoBlack";
+  font-size: calc(20px + 1vmin);
 }
