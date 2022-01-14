@@ -389,3 +389,13 @@ const nextSlide = () => {
 };
 console.log(current);
 ```
+
+<br>
+
+##### When i have 4 img
+
+[<img src="./src/img/slider-current-logic.gif"/>]()
+
+##### When i have 3 img
+
+[<img src="./src/img/slider-current-logic2.gif"/>]()
