@@ -9,4 +9,4 @@
 
 - Photography [cottonbro](https://www.pexels.com/fr-fr/@cottonbro/collections/)
 
-[<img src="./src/img/slider2-test.gif"/>](https://modal-beginner2.netlify.app/)
+[<img src="./src/img/slider2-test2.gif"/>](https://modal-beginner2.netlify.app/)

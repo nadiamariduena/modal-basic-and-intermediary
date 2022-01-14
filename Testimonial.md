@@ -427,7 +427,9 @@ const prevSlide = () => {
 
 <br>
 
-### Showing the images
+## Showing the images
+
+<br>
 
 - Nest the map function inside a new div, add a condition inside the **className** to see if the user is sliding
 
@@ -471,10 +473,30 @@ const prevSlide = () => {
 ```
 
 <br>
+<br>
+
+---
+
+<br>
+<br>
+
+## Animation 🐻
+
+<br>
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
 
 ### ⚠️ Some Issues
 
-#### IN the beginning I said, that adding display flex + centering will break the slider, yes it did with the set up of the start of the project, but at the end of the project you can actually add it.
+<br>
+
+#### In the beginning I said, that adding display flex + centering will break the slider, yes it did with the set up of the start of the project, but at the end of the project you can actually add it.
 
 ```scss
 .testimonial-front {
