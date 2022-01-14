@@ -68,6 +68,71 @@ export default TestimonialFront;
 
 <br>
 
-> **By default** the state will be at cero, and the reason for that is because if we set the state, without telling it that we want the **current** it will lag, and it will get the previous value, [read more about this issue in this repo](https://github.com/nadiamariduena/react-recap-2022/tree/5-useState-counter), **Look for 'current'**
+> **By default** the state will be at cero, and the reason for that is because if we set the state, without telling it that we want the **current** it will lag, and it will get the previous value without the current, [read more about this issue in this repo](https://github.com/nadiamariduena/react-recap-2022/tree/5-useState-counter), **Look for 'current'**
 
 <br>
+
+```javascript
+import React, { useState } from "react";
+import { dataSlider } from "../dataSlider";
+
+//
+//
+const TestimonialFront = () => {
+  //
+  const [current, setCurrent] = useState(0); // ✋
+
+
+  //
+  return (
+    <>
+```
+
+<br>
+<br>
+
+### Add this to the 'TestimonialFront'
+
+- It will show an error but you will solve it in the next step
+
+```javascript
+const length = slides.length;
+```
+
+### Then Go to the Home.jsx and add the prop
+
+- This prop will pass the data from one component to the other
+
+<br>
+
+###### Home.jsx
+
+<br>
+
+```javascript
+import { dataSlider } from "./dataSlider";
+//
+const Home = () => {
+  return (
+    <>
+      {/* <Modal /> */}
+      <TestimonialFront slides={dataSlider} /> 👍 slides prop
+    </>
+  );
+};
+```
+
+<br>
+
+###### TestimonialFront.jsx
+
+<br>
+
+```javascript
+//
+//
+const TestimonialFront = (slides) => { ✋
+  //
+  const [current, setCurrent] = useState(0);
+  const length = slides.length; ✋
+```
