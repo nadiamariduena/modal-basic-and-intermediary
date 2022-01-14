@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { dataSlider } from "../dataSlider";
+import { CgArrowLongLeft, CgArrowLongRight } from "react-icons/cg";
 
 //
 //
@@ -16,7 +17,9 @@ const TestimonialFront = (slides) => {
 
         {/*  */}
 
-        <div>
+        <div className="slider">
+          <CgArrowLongLeft />
+          <CgArrowLongRight />
           {dataSlider.map((item, index) => {
             const { image } = item;
             return <img src={item.image} alt="" />;

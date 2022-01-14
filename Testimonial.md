@@ -140,14 +140,80 @@ const TestimonialFront = (slides) => { ✋
 <br>
 <br>
 
+---
+
+<br>
+
 ### Add the Arrow icons
 
 - You can either install this [react-icons](https://react-icons.github.io/react-icons/)
 
-##### [arrows](https://react-icons.github.io/react-icons/)
+##### [arrows](https://react-icons.github.io/react-icons/search?q=arrow)
 
 ```javascript
 npm install react-icons
 ```
 
+##### Remember to add the 'identifier' at the end of the import
+
+- For example, my icons start with **IoIos** , so in the import you have to add the **/io** , like so:
+
+```javascript
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+```
+
+<br>
+
 - Or just use some html symbols
+
+##### [HTML arrows](https://www.toptal.com/designers/htmlarrows/arrows/) ✋
+
+<br>
+
+#### Once you have that, import the icons
+
+```javascript
+import React, { useState } from "react";
+import { dataSlider } from "../dataSlider";
+import { CgArrowLongLeft, CgArrowLongRight } from "react-icons/cg";
+
+//
+//
+const TestimonialFront = (slides) => {
+  //
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
+
+  //
+  return (
+    <>
+      <section className="testimonial-front">
+        <h1>Testimonial</h1>
+
+        <div className="slider">
+          <CgArrowLongLeft /> ✋
+          <CgArrowLongRight /> ✋{/*
+          
+          
+          
+          
+          */}
+          {dataSlider.map((item, index) => {
+            const { image } = item;
+            return <img src={item.image} alt="" />;
+          })}
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default TestimonialFront;
+```
+
+<br>
+<br>
+
+---
+
+<br>
