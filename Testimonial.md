@@ -223,7 +223,33 @@ export default TestimonialFront;
 
 <br>
 
-#### We will start with the arrows
+### The Containers/parents
+
+```scss
+//
+.testimonial-front {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0 0 3vh 0;
+  background-color: rgb(240, 219, 195);
+
+  // If you add display flex settings here, things will break 🔴
+  //
+  font-family: "RobotoBlack";
+  font-size: calc(20px + 1vmin);
+}
+//
+
+.slider {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+```
+
+#### the arrows
 
 <br>
 
@@ -247,3 +273,28 @@ export default TestimonialFront;
 
 <br>
 <br>
+
+```scss
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  //
+  font-size: 3rem;
+  color: #000;
+  z-index: 1;
+  cursor: pointer;
+  user-select: none;
+}
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  //
+  font-size: 3rem;
+  color: #000;
+  z-index: 1;
+  cursor: pointer;
+  user-select: none;
+}
+```

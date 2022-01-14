@@ -6,9 +6,6 @@
   background-color: rgb(240, 219, 195);
 
   //
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: "RobotoBlack";
   font-size: calc(20px + 1vmin);
 
@@ -22,6 +19,17 @@
     align-items: center;
 
     //
+    .left-arrow {
+      position: absolute;
+      top: 50%;
+      left: 32px;
+      //
+      font-size: 3rem;
+      color: #000;
+      z-index: 1;
+      cursor: pointer;
+      user-select: none;
+    }
     .right-arrow {
       position: absolute;
       top: 50%;
@@ -29,21 +37,11 @@
       //
       font-size: 3rem;
       color: #000;
-      z-index: 10;
+      z-index: 1;
       cursor: pointer;
       user-select: none;
     }
-    .left-arrow {
-      position: absolute;
-      top: 50%;
-      right: 32px;
-      //
-      font-size: 3rem;
-      color: #000;
-      z-index: 10;
-      cursor: pointer;
-      user-select: none;
-    }
+
     //
     .img-box {
       width: 1000px;
