@@ -18,11 +18,11 @@ const TestimonialFront = (slides) => {
         {/*  */}
 
         <div className="slider">
-          <CgArrowLongLeft />
-          <CgArrowLongRight />
+          <CgArrowLongLeft className="left-arrow" />
+          <CgArrowLongRight className="right-arrow" />
           {dataSlider.map((item, index) => {
             const { image } = item;
-            return <img src={item.image} alt="" />;
+            return <img src={item.image} alt="img" className="img-box" />;
           })}
         </div>
 

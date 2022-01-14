@@ -11,4 +11,27 @@
   align-items: center;
   font-family: "RobotoBlack";
   font-size: calc(20px + 1vmin);
+
+  //
+
+  .slider {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //
+    .left-arrow {
+    }
+    .right-arrow {
+    }
+    //
+    .img-box {
+      width: 1000px;
+      height: 600px;
+    }
+  }
+
+  //
 }

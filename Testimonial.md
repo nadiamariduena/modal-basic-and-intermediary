@@ -175,7 +175,7 @@ import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 ```javascript
 import React, { useState } from "react";
 import { dataSlider } from "../dataSlider";
-import { CgArrowLongLeft, CgArrowLongRight } from "react-icons/cg";
+import { CgArrowLongLeft, CgArrowLongRight } from "react-icons/cg"; ✋
 
 //
 //
@@ -193,13 +193,14 @@ const TestimonialFront = (slides) => {
         <div className="slider">
           <CgArrowLongLeft /> ✋
           <CgArrowLongRight /> ✋{/*
-          
-          
-          
-          
+
+
+
+
           */}
           {dataSlider.map((item, index) => {
             const { image } = item;
+
             return <img src={item.image} alt="" />;
           })}
         </div>
@@ -217,3 +218,30 @@ export default TestimonialFront;
 ---
 
 <br>
+
+# Styles 🥭
+
+<br>
+
+#### We will start with the arrows
+
+<br>
+
+- Add a **className** to both of them
+
+```javascript
+    <CgArrowLongLeft /> ✋
+          <CgArrowLongRight /> ✋{/*
+```
+
+<br>
+
+# 🍨
+
+#### to direct the arrows to the container parent
+
+- Add a position **relative** to the **className="slider"**
+
+> The position relative should always go inside the parent container
+
+- the position:relative works as a lighthouse
