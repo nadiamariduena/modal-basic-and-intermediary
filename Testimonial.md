@@ -230,18 +230,20 @@ export default TestimonialFront;
 - Add a **className** to both of them
 
 ```javascript
-    <CgArrowLongLeft /> ✋
-          <CgArrowLongRight /> ✋{/*
+          <CgArrowLongLeft className="left-arrow" />
+          <CgArrowLongRight className="right-arrow" />
 ```
 
 <br>
 
 # 🍨
 
-#### to direct the arrows to the container parent
+#### to direct the arrows to the container parent, do the following:
 
 - Add a position **relative** to the **className="slider"**
 
-> The position relative should always go inside the parent container
+> **The position relative** should always go inside the parent. container
+> **the position:relative** works as a lighthouse, in which the children are the boats, the children will carry a **position:absolute** for this to work
 
-- the position:relative works as a lighthouse
+<br>
+<br>
