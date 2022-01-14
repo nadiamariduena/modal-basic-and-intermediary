@@ -377,3 +377,15 @@ if (!Array.isArray(slides) || slides.length <= 0) {
   return null;
 }
 ```
+
+<br>
+<br>
+
+### If you are familiar with arrays you know they start at 0, so if we have 4 images we deduce 1, so in total we will have 3 and then it will reset it and go back to 0
+
+```javascript
+const nextSlide = () => {
+  setCurrent(current === length - 1 ? 0 : current + 1);
+};
+console.log(current);
+```
