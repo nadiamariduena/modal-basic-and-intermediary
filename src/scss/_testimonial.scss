@@ -1,17 +1,8 @@
 //
-.testimonial-wrapper {
-  width: 100vw;
-  height: 100vh;
-
-  .testimonial-container {
-    background-color: rgb(247, 245, 239);
-  }
-}
-
-//
 .testimonial-front {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 0 0 3vh 0;
   background-color: rgb(240, 219, 195);
 
   //

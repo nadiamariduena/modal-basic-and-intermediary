@@ -39,6 +39,7 @@ const TestimonialFront = () => {
         {/*  */}
 
         <div>
+          // nesting and mapping the images ✋
           {dataSlider.map((item, index) => {
             const { image } = item;
             return <img src={item.image} alt="" />;
@@ -53,3 +54,20 @@ const TestimonialFront = () => {
 
 export default TestimonialFront;
 ```
+
+<br>
+<br>
+
+# 🍨
+
+<br>
+
+### Now lets set up the <u>States</u>
+
+**1.** We will set up the current state:
+
+<br>
+
+> **By default** the state will be at cero, and the reason for that is because if we set the state, without telling it that we want the **current** it will lag, and it will get the previous value, [read more about this issue in this repo](https://github.com/nadiamariduena/react-recap-2022/tree/5-useState-counter), **Look for 'current'**
+
+<br>
