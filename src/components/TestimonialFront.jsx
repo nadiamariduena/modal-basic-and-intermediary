@@ -10,6 +10,14 @@ const TestimonialFront = ({ slides }) => {
   const length = slides.length;
 
   //
+  //if our slides, dont have an array and if our array is not an array type
+  //  OR || the slides, which is the images, has less or equal than 0,
+  // then return null
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
+
+  //
   return (
     <section className="testimonial-front">
       <h1>Testimonial</h1>
@@ -19,7 +27,20 @@ const TestimonialFront = ({ slides }) => {
         <CgArrowLongRight className="right-arrow" />
 
         {dataSlider.map((item, index) => {
-          return <img src={item.image} alt="img" className="img-box" />;
+          return (
+            <>
+              <img
+                key={item.id}
+                src={item.image}
+                alt="img"
+                className="img-box"
+              />
+              <div className="text-box">
+                {" "}
+                <h2>{item.desc}</h2>
+              </div>
+            </>
+          );
         })}
       </div>
     </section>

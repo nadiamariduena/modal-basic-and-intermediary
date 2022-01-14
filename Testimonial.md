@@ -298,3 +298,82 @@ export default TestimonialFront;
   user-select: none;
 }
 ```
+
+#### This is what we have
+
+```scss
+//
+.testimonial-front {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0 0 3vh 0;
+  background-color: rgb(240, 219, 195);
+
+  //
+  font-family: "RobotoBlack";
+  font-size: calc(20px + 1vmin);
+
+  //
+
+  .slider {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //
+    .left-arrow {
+      position: absolute;
+      top: 50%;
+      left: 32px;
+      //
+      font-size: 3rem;
+      color: #000;
+      z-index: 1;
+      cursor: pointer;
+      user-select: none;
+    }
+    .right-arrow {
+      position: absolute;
+      top: 50%;
+      right: 32px;
+      //
+      font-size: 3rem;
+      color: #000;
+      z-index: 1;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    //
+    .img-box {
+      width: 1000px;
+      height: 600px;
+    }
+  }
+
+  //
+}
+```
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+
+### The Slider Logic
+
+<br>
+
+```javascript
+//if our slides, dont have an array and if our array is not an array type
+//  OR || the slides, which is the images, has less or equal than 0,
+// then return null
+if (!Array.isArray(slides) || slides.length <= 0) {
+  return null;
+}
+```

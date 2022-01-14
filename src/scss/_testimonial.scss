@@ -47,6 +47,17 @@
       width: 1000px;
       height: 600px;
     }
+    //
+    //
+    .text-box {
+      width: 50%;
+      height: 50%;
+      background-color: pink;
+      z-index: 10;
+      position: absolute;
+      top: 25%;
+      left: 25%;
+    }
   }
 
   //
