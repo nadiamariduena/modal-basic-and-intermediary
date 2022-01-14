@@ -504,4 +504,6 @@ const prevSlide = () => {
 
 <br>
 
-- With the z-index to 1 to each arrow, you will see a clash between the modal and the slider arrows, when i said a clash
+- With the **z-index to 1 to each arrow**, you will see a clash between the modal and the slider arrows, when i said a clash, it means that when the modal is Open, you will see the arrows through it, when scrolling to the bottom. **the reason** for that is because I already have another z-index 1 inside the modal
+
+> **I tried changing** the z index to 2 to the buttons
