@@ -439,10 +439,6 @@ const prevSlide = () => {
 
 <br>
 
-```javascript
-
-```
-
 [<img src="./src/img/slider-working1.gif"/>]()
 
 #### You can also add text
@@ -498,7 +494,12 @@ const prevSlide = () => {
   //
 ```
 
+<br>
+<br>
+
 ### ⚠️ clashing of z-index
+
+<br>
 
 #### The easier way would have been to add the slider in another page, but I wanted to see the issues I could encounter
 
@@ -506,6 +507,120 @@ const prevSlide = () => {
 
 - With the **z-index to 1 to each arrow**, you will see a clash between the modal and the slider arrows, when i said a clash, it means that when the modal is Open, you will see the arrows through it, when scrolling to the bottom. **the reason** for that is because I already have another z-index 1 inside the modal
 
+<br>
+
+[<img src="./src/img/slider-current-zindex-issue.gif"/>]()
+
+```scss
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  //
+  font-size: 3rem;
+  color: #000;
+  z-index: 2;
+  cursor: pointer;
+  user-select: none;
+}
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  //
+  font-size: 3rem;
+  color: #000;
+  z-index: 2;
+  cursor: pointer;
+  user-select: none;
+}
+```
+
+<br>
+
 > **I tried changing** the z index to 2 to the buttons but nothing worked, so i removed the z index to them and then it worked
 
 > **In conclusion** for this 2 components the solution worked but it would be interesting to see if it could actually work for more options
+
+```scss
+//
+.testimonial-front {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0 0 3vh 0;
+  background-color: rgb(14, 14, 14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  //
+
+  font-family: "RobotoBlack";
+  font-size: calc(20px + 1vmin);
+
+  //
+
+  .slider {
+    margin-top: 40px;
+    position: relative;
+    width: 75%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //
+    .left-arrow {
+      position: absolute;
+      top: 50%;
+      left: 32px;
+      //
+      font-size: 3rem;
+      color: #000;
+
+      cursor: pointer;
+      user-select: none;
+    }
+    .right-arrow {
+      position: absolute;
+      top: 50%;
+      right: 32px;
+      //
+      font-size: 3rem;
+      color: #000;
+
+      cursor: pointer;
+      user-select: none;
+      z-index: 2;
+    }
+
+    //
+    .img-box {
+      width: 1000px;
+      height: 600px;
+    }
+    //
+    //
+    .text-box {
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      top: 1%;
+      left: 25%;
+
+      //
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        color: rgb(20, 20, 20);
+        font-family: "CoffekanRegular";
+        font-family: "PoppinsThin";
+        font-size: 3rem;
+      }
+    }
+  }
+
+  //
+}
+```
