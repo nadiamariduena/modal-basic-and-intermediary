@@ -10,3 +10,10 @@
 - Photography [cottonbro](https://www.pexels.com/fr-fr/@cottonbro/collections/)
 
 [<img src="./src/img/slider2-test2.gif"/>](https://modal-beginner2.netlify.app/)
+
+<br>
+<br>
+
+##### Second version
+
+[<img src="./src/img/slider2-test2.gif"/>](https://github.com/nadiamariduena/modal-basictwo-intermediary)
