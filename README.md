@@ -16,4 +16,4 @@
 
 ##### Second version
 
-[<img src="./src/img/slider2-test2.gif"/>](https://github.com/nadiamariduena/modal-basictwo-intermediary)
+[<img src="./src/img/preview"/>](https://github.com/nadiamariduena/modal-basictwo-intermediary)
