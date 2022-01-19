@@ -17,3 +17,12 @@
 ##### Second version
 
 [<img src="./src/img/preview.gif"/>](https://github.com/nadiamariduena/modal-basictwo-intermediary)
+
+<br>
+<br>
+
+##### Third version
+
+- Look similar to the first one, but I tried a bit of recursion, I also changed the way I required the images:
+
+[<img src="./src/img/preview2.gif"/>](https://github.com/nadiamariduena/modal-fetch1)
