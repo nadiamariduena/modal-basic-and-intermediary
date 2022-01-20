@@ -34,7 +34,17 @@
 
 ##### Fourth version
 
-- Testing the different types of issues | **click on the image to try it**
+<br>
+
+#### Different social networks for each individual
+
+<br>
+
+- Actually I dont need it to be this way, as there's no logic in having the same social network for each link in this example, **But** it will be helpful in case I wanted to add a profile of a single person, artists for example, each one of them should have their own social networks.
+
+<br>
+
+- **click on the image to try it**
 
 <br>
 
