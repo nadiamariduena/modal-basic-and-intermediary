@@ -28,3 +28,14 @@
 <br>
 
 [<img src="./src/img/preview2.gif"/>](https://github.com/nadiamariduena/modal-fetch1)
+
+<br>
+<br>
+
+##### Fourth version
+
+- Testing the different types of issues | **click on the image to try it**
+
+<br>
+
+[<img src="./src/img/preview3_positionabso-mobile.gif"/>](https://slider-centered-design-mobile-option-1.netlify.app/)
